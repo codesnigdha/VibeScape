@@ -113,7 +113,7 @@ function App() {
       {/* Main Content */}
       <main className="flex-1 w-full pt-[95px] md:pt-[100px] pb-8 flex flex-col gap-6 md:gap-8 max-w-[1920px] mx-auto">
         {/* Categories */}
-        <section className="w-full px-2 sm:px-4 md:px-6 lg:px-8">
+        <section className="w-full">
           <CategoryNav
             currentCategory={query}
             onSelectCategory={handleSearch}

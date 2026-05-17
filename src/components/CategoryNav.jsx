@@ -149,6 +149,7 @@ const CategoryNav = ({ currentCategory, onSelectCategory }) => {
         className="
           absolute left-0 top-1/2
           -translate-y-1/2 z-20
+          ml-4
           w-10 h-10 md:w-12 md:h-12 rounded-full
           bg-background/80
           backdrop-blur-xl
@@ -228,12 +229,6 @@ const CategoryNav = ({ currentCategory, onSelectCategory }) => {
                 >
                   {category}
                 </span>
-
-                <span className="text-xs text-muted">
-                  {Math.random() > 0.7
-                    ? `${(Math.random() * 2).toFixed(1)}M`
-                    : `${(Math.random() * 900 + 50).toFixed(1)}K`}
-                </span>
               </div>
             </button>
           );
@@ -246,13 +241,14 @@ const CategoryNav = ({ currentCategory, onSelectCategory }) => {
         className="
           absolute right-0 top-1/2
           -translate-y-1/2 z-20
+          mr-4
           w-10 h-10 md:w-12 md:h-12 rounded-full
           bg-background/80
           backdrop-blur-xl
           border border-border
           shadow-lg
           hidden md:flex items-center justify-center
-          hover:scale-110
+          hover:scale-110 
           transition-all
         "
       >
